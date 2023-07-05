@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>$(MSBuildProjectName.Replace("-dev", ""))</RootNamespace>
+    <AssemblyName>$(MSBuildProjectName.Replace("-dev", ""))</AssemblyName>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
+    </ItemGroup>
+    
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataProvider.Base\src\MDD4All.SpecIF.DataProvider.Base\MDD4All.SpecIF.DataProvider.Base-dev.csproj" />
+    <ProjectReference Include="..\..\..\MDD4All.UI.DataModels\src\MDD4All.UI.DataModels\MDD4All.UI.DataModels-dev.csproj" />
+  </ItemGroup>
+
+</Project>
